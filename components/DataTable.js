@@ -16,7 +16,7 @@ const App = () => {
   const pageSize = 10;
 
   useEffect(() => {
-    // Fetch data from the API
+   
     const fetchData = async () => {
       try {
         const response = await fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json');
@@ -41,26 +41,24 @@ const App = () => {
     setEditedEmail(email);
     setEditedRole(role);
     setIsEditMode(true);
-    setSelectedRole(role); // Set the selected role when entering edit mode
+    setSelectedRole(role); 
   };
 
   const handleSave = (id) => {
     setIsEditMode(false);
   
-    // Find the user in the array and update the data
     const updatedUsers = users.map((user) =>
       user.id === id
         ? { ...user, name: editedName, email: editedEmail, role: selectedRole }
         : user
     );
     setUsers(updatedUsers);
-  
-    // Reset the editing state
+
     setEditingUserId(null);
     setEditedName('');
     setEditedEmail('');
     setEditedRole('');
-    setSelectedRole(''); // Reset selected role
+    setSelectedRole('');
   };
   
 
@@ -117,7 +115,7 @@ const App = () => {
            
             width: '20px',
             height: '20px',
-            backgroundImage: 'url("/search.png")', // Replace with the path to your placeholder image
+            backgroundImage: 'url("/search.png")', 
             backgroundSize: 'cover',
           }}
         />
@@ -170,7 +168,7 @@ const App = () => {
                   type="text"
                   value={editedName}
                   onChange={(e) => setEditedName(e.target.value)}
-                  className={styles.editInput} // Add your custom class for styling
+                  className={styles.editInput} 
                 />
               ) : (
                 user.name
@@ -182,7 +180,7 @@ const App = () => {
                   type="text"
                   value={editedEmail}
                   onChange={(e) => setEditedEmail(e.target.value)}
-                  className={styles.editInput} // Add your custom class for styling
+                  className={styles.editInput} 
                 />
               ) : (
                 user.email
@@ -193,7 +191,7 @@ const App = () => {
                 <select
                   value={selectedRole}
                   onChange={(e) => setSelectedRole(e.target.value)}
-                  className={styles.editSelect} // Add your custom class for styling
+                  className={styles.editSelect} 
                 >
                   <option value="admin">Admin</option>
                   <option value="member">Member</option>
@@ -225,7 +223,7 @@ const App = () => {
       </div>
 
       <div className="pagination" style={{ display: 'flex', justifyContent: 'space-between' ,marginTop:'10px'}}>
-  {/* The following div will be hidden in mobile view */}
+ 
   <div className={`${styles.paginationInfo} ${styles.hideMobile}`} style={{color:'#777777'}}>
     {selectedRows.length} of {filteredUsers.length} row(s) selected
   </div>

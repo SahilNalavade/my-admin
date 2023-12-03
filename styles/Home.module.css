@@ -7,7 +7,7 @@
 
 }
 
-/* Add this to your stylesheet */
+
 .searchInput {
   width: 100%;
   min-width: 400px;
@@ -33,7 +33,7 @@
   }
 
   .addButton {
-    margin-top: -20px; /* Adjust the top margin as needed */
+    margin-top: -20px; 
   }
 
   .searchInput {
@@ -61,7 +61,6 @@
 }
 
 
-/* Home.module.css */
 .saveButton{
   width: 40px;
   height: 40px; 
@@ -108,7 +107,6 @@
 }
 
 
-/* Home.module.css */
 
 .pagination {
   display: flex;
@@ -118,7 +116,7 @@
 .paginationInfo {
   display: flex;
   align-items: center;
-  margin: 10px 0px 0px 10px; /* Adjust margin as needed */
+  margin: 10px 0px 0px 10px; 
 }
 
 
@@ -133,13 +131,13 @@
   border: 1px solid #ccc;
   background-color: #fff;
   cursor: pointer;
-  margin: 0 5px; /* Adjust margin as needed */
-  display: inline-block; /* Set display to inline-block */
+  margin: 0 5px; 
+  display: inline-block; 
 }
 
 .pagitationb {
   color:#000;
-  font-weight:bold;/* Adjust margin for pagination buttons */
+  font-weight:bold;
 }
 
 .first {
@@ -209,8 +207,6 @@
  
 }
 
-/* Table stlyes */
-
 .table {
   
   font-family: 'Lettera Text LL', sans-serif;
@@ -239,7 +235,7 @@
 .tableRow {
   height: 56px;
   border-bottom: 1px solid #E4E4E4;
-  padding-left: 10px; /* Add padding to the left */
+  padding-left: 10px;
 }
 
 .tableDataCell {
@@ -286,9 +282,9 @@
 
 
 .editButton{
-  width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    background-size: 18px; /* Adjust the background-size as needed */
+  width: 20px;
+    height: 20px;
+    background-size: 18px;
     background-position: center center;
     border:none;
     background-color: transparent;
@@ -298,17 +294,17 @@
 
 
 .deleteButton {
-  width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    background-size: 18px; /* Adjust the background-size as needed */
+  width: 20px; 
+    height: 20px; 
+    background-size: 18px;
     background-position: center center;
     border:none;
     background-color: transparent;
 }
 .saveButton{
-  width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    background-size: 18px; /* Adjust the background-size as needed */
+  width: 20px; 
+    height: 20px; 
+    background-size: 18px;
     background-position: center center;
     border:none;
     background-color: transparent;
@@ -349,14 +345,14 @@
 .editInput {
   background-color: #fff;
   border: none;
-  border-bottom: 1px solid #000; /* Adjust the color as needed */
-  padding: 5px; /* Add padding as needed */
+  border-bottom: 1px solid #000; 
+  padding: 5px; 
   width: 70%;
-  color:#000; /* Make the input box fill its container */
+  color:#000; 
 }
 
 .selectedRow {
-  background-color: #DCDCDC; /* Adjust the color as needed */
+  background-color: #DCDCDC;
 }
 
 .hideMobile {

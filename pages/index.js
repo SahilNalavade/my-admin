@@ -35,8 +35,8 @@ const Home = () => {
     onClick={toggleDarkMode}
     style={{
       position: 'absolute',
-      top: '10px', // Adjust the value to move the button up or down
-      right: '115px', // Adjust the value to move the button left or right
+      top: '10px', 
+      right: '115px',
     }}
   >
     {darkMode ? (

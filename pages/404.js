@@ -9,14 +9,14 @@ const NotFound = () => {
       <img
         src="/download.png"  
         alt="Error Image"
-        style={{ maxWidth: '30%', height: 'auto', marginBottom:'5%' }}
+        style={{ maxWidth: '20%', height: 'auto', marginBottom:'5%' }}
       />
       <h1>404 - Page Not Found</h1>
       <p>Looks like you&apos;ve stumbled upon the land of mischievous 404 errors.</p>
       
    
       <Link href="/">
-        <div style={{ textDecoration: 'none', padding: '10px 20px', background: '#4643EE', color: '#fff', borderRadius: '5px', display: 'inline-block', marginTop:'15%' }}>
+        <div style={{ textDecoration: 'none', padding: '10px 20px', background: '#088397', color: '#fff', borderRadius: '5px', display: 'inline-block', marginTop:'15%' }}>
           Go Back Home
         </div>
       </Link>
