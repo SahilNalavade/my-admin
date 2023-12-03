@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  overflow: hidden;
+
   background-color:#fff;
   color:#000;
 
@@ -320,4 +320,13 @@
 
 .selectedRow {
   background-color: #626262; /* Adjust the color as needed */
+}
+
+.hideMobile {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex !important;
+   
+  }
 }

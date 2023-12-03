@@ -224,55 +224,59 @@ const App = () => {
       </table>
       </div>
 
-      <div className="pagination">
-  <div className={styles.paginationInfo}>
-    <div>
-      {selectedRows.length} of {filteredUsers.length} row(s) selected
-    </div>
-    <div>
+      <div className="pagination" style={{ display: 'flex', justifyContent: 'space-between' ,marginTop:'10px'}}>
+  {/* The following div will be hidden in mobile view */}
+  <div className={`${styles.paginationInfo} ${styles.hideMobile}`}>
+    {selectedRows.length} of {filteredUsers.length} row(s) selected
+  </div>
+
+  <div style={{ display: 'flex', alignItems: 'center' }} className='hideMobile'>
+    <div className={`${styles.hideMobile}`}>
       Page {currentPage} of {totalPages}
     </div>
- 
-  <button
-    disabled={currentPage === 1}
-    onClick={() => handlePageChange(1)}
-    className={styles.first}
-  >
-    GG
-  </button>
-  <button
-    disabled={currentPage === 1}
-    onClick={() => handlePageChange(currentPage - 1)}
-    className={styles.previous}
-  >
-    GG
-  </button>
-  {[...Array(totalPages)].map((_, index) => (
     <button
-      key={index + 1}
-      onClick={() => handlePageChange(index + 1)}
-      disabled={currentPage === index + 1}
-      className={styles.pagitationb}
+      disabled={currentPage === 1}
+      onClick={() => handlePageChange(1)}
+      className={styles.first}
     >
-      {index + 1}
+      GG
     </button>
-  ))}
-  <button
-    disabled={currentPage === totalPages}
-    onClick={() => handlePageChange(currentPage + 1)}
-    className={styles.next}
-  >
-    GG
-  </button>
-  <button
-    disabled={currentPage === totalPages}
-    onClick={() => handlePageChange(totalPages)}
-    className={styles.last}
-  >
-    GG
-  </button>
+    <button
+      disabled={currentPage === 1}
+      onClick={() => handlePageChange(currentPage - 1)}
+      className={styles.previous}
+    >
+      GG
+    </button>
+    {[...Array(totalPages)].map((_, index) => (
+      <button
+        key={index + 1}
+        onClick={() => handlePageChange(index + 1)}
+        disabled={currentPage === index + 1}
+        className={styles.pagitationb}
+      >
+        {index + 1}
+      </button>
+    ))}
+    <button
+      disabled={currentPage === totalPages}
+      onClick={() => handlePageChange(currentPage + 1)}
+      className={styles.next}
+    >
+      GG
+    </button>
+    <button
+      disabled={currentPage === totalPages}
+      onClick={() => handlePageChange(totalPages)}
+      className={styles.last}
+    >
+      GG
+    </button>
+  </div>
 </div>
-</div>
+
+
+
 
 
       
