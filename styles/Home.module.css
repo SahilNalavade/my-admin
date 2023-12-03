@@ -51,10 +51,11 @@
 
   .tableRow {
     font-size: 10px;
+
   }
 
   .tableDataCell {
-    padding: 0px;
+    
     border-bottom: 1px solid #E4E4E4;
   }
 }
@@ -105,11 +106,7 @@
   background-size: 20px;
   background-position: 10px center;
 }
-.saveButton
-.editButton:hover,
-.deleteButton:hover {
-  background-color: #ddd;
-}
+
 
 /* Home.module.css */
 
@@ -273,6 +270,49 @@
     border-bottom: 1px solid #E4E4E4; 
   }
   
+  .saveButton{
+  width: 40px;
+  height: 40px; 
+  border-radius: 7px;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  background-image: url('/save.png');
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 8px center;
+}
+
+
+.editButton{
+  width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-size: 18px; /* Adjust the background-size as needed */
+    background-position: center center;
+    border:none;
+    background-color: transparent;
+    margin-right: 0px;
+
+}
+
+
+.deleteButton {
+  width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-size: 18px; /* Adjust the background-size as needed */
+    background-position: center center;
+    border:none;
+    background-color: transparent;
+}
+.saveButton{
+  width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-size: 18px; /* Adjust the background-size as needed */
+    background-position: center center;
+    border:none;
+    background-color: transparent;
+}
   
   
  

@@ -164,7 +164,7 @@ const App = () => {
                   }}
                 />
               </td>
-              <td>
+              <td style={{paddingLeft:'10px' }}>
               {editingUserId === user.id ? (
                 <input
                   type="text"
@@ -176,7 +176,7 @@ const App = () => {
                 user.name
               )}
             </td>
-            <td>
+            <td style={{paddingLeft:'10px' }}>
               {editingUserId === user.id ? (
                 <input
                   type="text"
@@ -188,7 +188,7 @@ const App = () => {
                 user.email
               )}
             </td>
-            <td>
+            <td style={{paddingLeft:'10px' }}>
               {editingUserId === user.id ? (
                 <select
                   value={selectedRole}
@@ -202,7 +202,7 @@ const App = () => {
                 user.role
               )}
             </td>
-              <td>
+              <td style={{paddingLeft:'10px' }}>
                 {editingUserId === user.id ? (
                   <button className={styles.saveButton} onClick={() => handleSave(user.id)}>
              
@@ -210,7 +210,7 @@ const App = () => {
                 ) : (
                   <>
                     <button className={styles.editButton} onClick={() => handleEdit(user.id, user.name, user.email, user.role)}>
-         
+                  
                     </button>
                     <button className={styles.deleteButton} onClick={() => handleDelete(user.id)}>
                     
