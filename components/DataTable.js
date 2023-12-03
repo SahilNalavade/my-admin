@@ -102,7 +102,7 @@ const App = () => {
   <div style={{ position: 'relative', display: 'inline-block' }}>
 <input
         type="text"
-        placeholder="Search"
+        placeholder="Enter Value.."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className={styles.searchInput}
