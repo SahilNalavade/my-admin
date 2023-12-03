@@ -1,0 +1,196 @@
+/* styles/Navbar.module.css */
+
+
+.navbar {
+  display: flex;
+  font-family: 'Lettera Text LL', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  border-right: 1px solid #E4E4E4; 
+}
+
+  
+  .hamburger {
+    cursor: pointer;
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 47px; 
+    right: 20px;
+    z-index: 2; 
+  }
+  
+  .hamburger > div {
+  
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    flex-direction: column;
+    height: 100vh;
+    width: 258px; 
+  }
+  
+  .navList li {
+    margin-right: 20px;
+    margin:4px 0px;
+    padding: 10px 16px;
+  }
+  
+  .navList .selected {
+    background-color: rgba(70, 67, 238, 0.1);
+    
+    width: 100%; 
+    height: fit-content;
+    color:#4643EE;
+    border-radius: 7px;
+    gap: 12px;
+  }
+
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: column !important;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    padding: 0px 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1; 
+    display: none;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .navbar.dark-mode .navList {
+    background-color: #292929; 
+    color: #ffffff; 
+  }
+
+  .navList.show {
+    display: flex; 
+    opacity: 1;
+  }
+
+}
+
+
+
+
+  
+@media (min-width: 769px) and (max-width: 1000px) {
+  .navbar {
+    padding: 0 2px; 
+  }
+
+  .navList {
+    width: 230px;
+  }
+
+  
+}
+
+  
+
+.logoImage {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 48px;
+}
+
+
+
+
+.userSection {
+  display: flex;
+  align-items:center;
+
+}
+
+.userImageWrapper {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 12px; 
+}
+
+.userImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userName {
+  font-family: 'Lettera Text LL', sans-serif; 
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px; 
+  color: #050505 
+}
+
+.additionalName{
+  font-family: 'Lettera Text LL', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: #777676;
+}
+
+
+.userContainer {
+  margin-top: 120px; 
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    width: 30%; 
+    margin-top: 20px;
+    margin-bottom: 48px;
+  }
+}
+
+.navbar.dark-mode {
+  background-color: #292929;
+  color: #ffffff;
+}
+
+.navbar.dark-mode .line {
+  background-color: #ffffff; 
+}
+
+.userName {
+  font-family: 'Lettera Text LL', sans-serif; 
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px; 
+  color: #050505; /* Default color */
+}
+
+/* Add a style for dark mode */
+.navbar.dark-mode .userName {
+  color: #ffffff; /* Set the desired font color for dark mode */
+}
