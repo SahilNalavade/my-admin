@@ -45,17 +45,7 @@ const Navbar = ({ darkMode }) => {
           <Link href="/uar">UAR</Link>
         </li>
 
-        <div className={styles.userContainer}>
-        <li className={styles.userSection}>
-          <div className={styles.userImageWrapper}>
-            <img src='/elon.jpg' alt="User" className={styles.userImage} />
-          </div>
-          <div>
-            <div className={styles.userName}>Elon Musk</div>
-            <div className={styles.additionalName}>elon@twitter.com</div>
-          </div>
-        </li>
-      </div>
+ 
     
       </ul>
     </nav>

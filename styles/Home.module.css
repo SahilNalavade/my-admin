@@ -28,37 +28,162 @@
   margin-left:2%;
 }
 
-
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    height:100vh
-  }
-
-
-  .tabListItem {
-    margin-bottom: 10px;
+    height: 100%;
   }
 
   .addButton {
-    margin-top: 10px;
+    margin-top: -20px; /* Adjust the top margin as needed */
+   
   }
 
   .searchInput {
     width: 100%;
-    min-width: 290px;
-   
+    min-width: 250px;
   }
 
-  
- 
+  .table {
+    margin-left: -10px;
+  }
+
+  .tableHeader {
+    font-size: 10px;
+  }
+
+  .tableRow {
+    font-size: 10px;
+  }
+
+  .tableDataCell {
+    padding: 0px;
+    border-bottom: 1px solid #E4E4E4;
+  }
+}
+
+/* Home.module.css */
+.saveButton{
+  width: 40px;
+  height: 40px; 
+  border-radius: 7px;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  background-image: url('/save.png');
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 8px center;
+}
+
+
+.editButton{
+  width: 40px;
+  height: 40px; 
+  border-radius: 7px;
+
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  background-image: url('/createicon.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px center;
+}
+
+
+.deleteButton {
+  width: 40px;
+  height: 40px; 
+  border-radius: 7px;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  background-image: url('/delete.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px center;
+}
+.saveButton
+.editButton:hover,
+.deleteButton:hover {
+  background-color: #ddd;
+}
+
+/* Home.module.css */
+
+.pagination {
+  display: flex;
+  align-items: center;
+
+}
+.paginationInfo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 0px 10px; /* Adjust margin as needed */
+}
+
+
+.first,
+.previous,
+.pagitationb,
+.next,
+.last {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 0 5px; /* Adjust margin as needed */
+  display: inline-block; /* Set display to inline-block */
+}
+
+.pagitationb {
+  color:#000;
+  font-weight:bold;/* Adjust margin for pagination buttons */
+}
+
+.first {
+  background-image: url('/first.png');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center center;
+  color:transparent;
+}
+
+.previous {
+  background-image: url('/previous.png');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center center;
+  color:transparent;
+}
+
+.next {
+  background-image: url('/next.png');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center center;
+  color:transparent;
+}
+
+.last {
+  background-image: url('/last.png');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center center;
+  color:transparent;
 }
 
 
 
 .addButton {
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 40px;
   width: 40px;
   height: 40px; 
   border-radius: 7px;
@@ -78,13 +203,9 @@
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 10px center;
+  margin-top:-20px;
 }
 
-.addIcon {
-  width: 20px; 
-  height: 20px; 
-  margin-right: 10px; 
-}
 
 
 .tableContainer {
@@ -97,7 +218,7 @@
 .table {
   font-family: 'Lettera Text LL', sans-serif;
   width: 100%;
-  margin-top:15px;
+
  
   top: 253px;
   left: 306px;
@@ -108,7 +229,7 @@
 
 .tableHeader {
   background: #D0D0D0;
-  height: 48px;
+  height: 40px;
   font-size: 12px;
   text-align: left;
   padding-left: 22px;
@@ -118,10 +239,13 @@
 
 .tableBody {
   font-size: 14px; 
+  
 }
 
 .tableRow {
- height: 42px;
+  height: 55px;
+  border-bottom: 1px solid #E4E4E4;
+  padding-left: 10px; /* Add padding to the left */
 }
 
 .tableDataCell {
@@ -182,4 +306,18 @@
   width: 24px; 
   height: 24px; 
   margin-left: 10px; 
+}
+
+
+.editInput {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #000; /* Adjust the color as needed */
+  padding: 5px; /* Add padding as needed */
+  width: 70%;
+  color:#000; /* Make the input box fill its container */
+}
+
+.selectedRow {
+  background-color: #626262; /* Adjust the color as needed */
 }

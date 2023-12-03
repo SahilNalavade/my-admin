@@ -123,13 +123,19 @@ const App = () => {
         />
       )}
       </div>
+
+      <div >
+        <button onClick={handleDeleteSelected} className={styles.addButton} />
+    
+      </div>
  
 <div className={styles.tableContainer}>
       <table className={styles.table}>
         <thead>
           <tr>
-            <th className={styles.tableHeader}>
+            <th className={styles.tableHeader} >
               <input
+              
                 type="checkbox"
                 checked={selectedRows.length === pageSize}
                 onChange={handleSelectAll}
@@ -143,9 +149,11 @@ const App = () => {
         </thead>
         <tbody className={styles.tableBody}>
           {paginatedUsers.map((user) => (
-            <tr key={user.id} className={styles.tableRow}>
+          <tr key={user.id} className={`${styles.tableRow} ${selectedRows.includes(user) ? styles.selectedRow : ''}`}>
               <td>
                 <input
+                style={{marginLeft:'22px' }}
+               
                   type="checkbox"
                   checked={selectedRows.includes(user)}
                   onChange={() => {
@@ -157,52 +165,55 @@ const App = () => {
                 />
               </td>
               <td>
-                {editingUserId === user.id ? (
-                  <input
-                    type="text"
-                    value={editedName}
-                    onChange={(e) => setEditedName(e.target.value)}
-                  />
-                ) : (
-                  user.name
-                )}
-              </td>
+              {editingUserId === user.id ? (
+                <input
+                  type="text"
+                  value={editedName}
+                  onChange={(e) => setEditedName(e.target.value)}
+                  className={styles.editInput} // Add your custom class for styling
+                />
+              ) : (
+                user.name
+              )}
+            </td>
+            <td>
+              {editingUserId === user.id ? (
+                <input
+                  type="text"
+                  value={editedEmail}
+                  onChange={(e) => setEditedEmail(e.target.value)}
+                  className={styles.editInput} // Add your custom class for styling
+                />
+              ) : (
+                user.email
+              )}
+            </td>
+            <td>
+              {editingUserId === user.id ? (
+                <select
+                  value={selectedRole}
+                  onChange={(e) => setSelectedRole(e.target.value)}
+                  className={styles.editSelect} // Add your custom class for styling
+                >
+                  <option value="admin">Admin</option>
+                  <option value="member">Member</option>
+                </select>
+              ) : (
+                user.role
+              )}
+            </td>
               <td>
                 {editingUserId === user.id ? (
-                  <input
-                    type="text"
-                    value={editedEmail}
-                    onChange={(e) => setEditedEmail(e.target.value)}
-                  />
-                ) : (
-                  user.email
-                )}
-              </td>
-              <td>
-                {editingUserId === user.id ? (
-                   <select
-                   value={selectedRole}
-                   onChange={(e) => setSelectedRole(e.target.value)}
-                 >
-                   <option value="admin">Admin</option>
-                   <option value="member">Member</option>
-                 </select>
-                ) : (
-                  user.role
-                )}
-              </td>
-              <td>
-                {editingUserId === user.id ? (
-                  <button onClick={() => handleSave(user.id)}>
-                    Save
+                  <button className={styles.saveButton} onClick={() => handleSave(user.id)}>
+             
                   </button>
                 ) : (
                   <>
-                    <button onClick={() => handleEdit(user.id, user.name, user.email, user.role)}>
-                      Edit
+                    <button className={styles.editButton} onClick={() => handleEdit(user.id, user.name, user.email, user.role)}>
+         
                     </button>
-                    <button onClick={() => handleDelete(user.id)}>
-                      Delete
+                    <button className={styles.deleteButton} onClick={() => handleDelete(user.id)}>
+                    
                     </button>
                   </>
                 )}
@@ -214,51 +225,57 @@ const App = () => {
       </div>
 
       <div className="pagination">
-        <div>
-          Page {currentPage} of {totalPages}
-        </div>
-        <div>
-          Selected {selectedRows.length} out of {filteredUsers.length} rows
-        </div>
-        <button
-          disabled={currentPage === 1}
-          onClick={() => handlePageChange(1)}
-        >
-          First
-        </button>
-        <button
-          disabled={currentPage === 1}
-          onClick={() => handlePageChange(currentPage - 1)}
-        >
-          Previous
-        </button>
-        {[...Array(totalPages)].map((_, index) => (
-          <button
-            key={index + 1}
-            onClick={() => handlePageChange(index + 1)}
-            disabled={currentPage === index + 1}
-          >
-            {index + 1}
-          </button>
-        ))}
-        <button
-          disabled={currentPage === totalPages}
-          onClick={() => handlePageChange(currentPage + 1)}
-        >
-          Next
-        </button>
-        <button
-          disabled={currentPage === totalPages}
-          onClick={() => handlePageChange(totalPages)}
-        >
-          Last
-        </button>
-      </div>
+  <div className={styles.paginationInfo}>
+    <div>
+      {selectedRows.length} of {filteredUsers.length} row(s) selected
+    </div>
+    <div>
+      Page {currentPage} of {totalPages}
+    </div>
+ 
+  <button
+    disabled={currentPage === 1}
+    onClick={() => handlePageChange(1)}
+    className={styles.first}
+  >
+    GG
+  </button>
+  <button
+    disabled={currentPage === 1}
+    onClick={() => handlePageChange(currentPage - 1)}
+    className={styles.previous}
+  >
+    GG
+  </button>
+  {[...Array(totalPages)].map((_, index) => (
+    <button
+      key={index + 1}
+      onClick={() => handlePageChange(index + 1)}
+      disabled={currentPage === index + 1}
+      className={styles.pagitationb}
+    >
+      {index + 1}
+    </button>
+  ))}
+  <button
+    disabled={currentPage === totalPages}
+    onClick={() => handlePageChange(currentPage + 1)}
+    className={styles.next}
+  >
+    GG
+  </button>
+  <button
+    disabled={currentPage === totalPages}
+    onClick={() => handlePageChange(totalPages)}
+    className={styles.last}
+  >
+    GG
+  </button>
+</div>
+</div>
 
-      <div >
-        <button onClick={handleDeleteSelected} className={styles.addButton} />
-    
-      </div>
+
+      
     </div>
   );
 };

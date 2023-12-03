@@ -40,10 +40,10 @@ const Home = () => {
                 )}
               </button>
             ) : <button className={styles.darkModeButton} onClick={toggleDarkMode}   style={{
-              marginRight: '10px',
+             
               marginTop: '2px',
-              position: 'relative',
-              top: '40px', right:'170px'// Adjust this value as needed
+         
+              top: '40px', right:'160px'// Adjust this value as needed
             }}
           >
           
@@ -55,13 +55,7 @@ const Home = () => {
               </button>}
             
           </div>
-          <div className={styles.tabs}>
-          
-       
-      
-     
-       
-          </div>
+        
 
           <div className={styles.tabContent}>
            <DataTable />
