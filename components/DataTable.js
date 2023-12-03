@@ -98,7 +98,8 @@ const App = () => {
 
  
 
-<div style={{ position: 'relative', display: 'inline-block' }}>
+<div>
+  <div style={{ position: 'relative', display: 'inline-block' }}>
 <input
         type="text"
         placeholder="Search"
@@ -121,6 +122,7 @@ const App = () => {
           }}
         />
       )}
+      </div>
  
 <div className={styles.tableContainer}>
       <table className={styles.table}>
@@ -141,7 +143,7 @@ const App = () => {
         </thead>
         <tbody className={styles.tableBody}>
           {paginatedUsers.map((user) => (
-            <tr key={user.id}>
+            <tr key={user.id} className={styles.tableRow}>
               <td>
                 <input
                   type="checkbox"
