@@ -2,7 +2,6 @@
 
 .container {
   display: flex;
-
   background-color:#fff;
   color:#000;
 
@@ -16,7 +15,6 @@
   padding: 8px 16px 8px 40px;
   border-radius: 9px 8px 8px 9px;
   border: 1px solid #E4E4E4;
-  gap: 10px;
   background: #FFFFFF;
   color: #000;
   font-family: 'Lettera Text LL', sans-serif;
@@ -211,16 +209,15 @@
 .tableContainer {
   width: 100%;
   overflow-x: auto;
+ 
 }
 
 /* Table stlyes */
 
 .table {
+  
   font-family: 'Lettera Text LL', sans-serif;
   width: 100%;
-
- 
-  top: 253px;
   left: 306px;
   border-collapse: collapse;
   border: 1px solid #E4E4E4;
@@ -243,7 +240,7 @@
 }
 
 .tableRow {
-  height: 55px;
+  height: 56px;
   border-bottom: 1px solid #E4E4E4;
   padding-left: 10px; /* Add padding to the left */
 }
@@ -319,7 +316,7 @@
 }
 
 .selectedRow {
-  background-color: #626262; /* Adjust the color as needed */
+  background-color: #DCDCDC; /* Adjust the color as needed */
 }
 
 .hideMobile {

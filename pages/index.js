@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import styles from '@/styles/Home.module.css';
-import UserTable from '../components/UserTable';
-import CompletedUserTable from '../components/CompletedUserTable';
+
 import DataTable from '../components/DataTable';
 const Home = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -30,25 +29,24 @@ const Home = () => {
       <div className={`${styles.container} ${darkMode ? styles['dark-mode'] : ''}`}>
         <Navbar darkMode={darkMode}/>
         <main className={styles.dashboard}>
-        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', paddingRight: '60px' }}>
-  {isMobileView ? (
-    <button className={styles.darkModeButton} onClick={toggleDarkMode}>
-      {darkMode ? (
-        <img src="/light1.png" style={{ width: '50px' }} alt="Sun" />
-      ) : (
-        <img src="/dark1.png" style={{ width: '50px' }} alt="Moon" />
-      )}
-    </button>
-  ) : (
-    <button className={styles.darkModeButton} onClick={toggleDarkMode}>
-      {darkMode ? (
-        <img src="/light1.png" style={{ width: '50px' }} alt="Sun" />
-      ) : (
-        <img src="/dark1.png" style={{ width: '50px' }} alt="Moon" />
-      )}
-    </button>
-  )}
+        <div style={{ position: 'relative' }}>
+  <button
+    className={styles.darkModeButton}
+    onClick={toggleDarkMode}
+    style={{
+      position: 'absolute',
+      top: '10px', // Adjust the value to move the button up or down
+      right: '115px', // Adjust the value to move the button left or right
+    }}
+  >
+    {darkMode ? (
+      <img src="/light1.png" style={{ width: '50px' }} alt="Sun" />
+    ) : (
+      <img src="/dark1.png" style={{ width: '50px' }} alt="Moon" />
+    )}
+  </button>
 </div>
+
 
         
 
