@@ -21,40 +21,35 @@ const Home = () => {
 
   return (
     <>
-      <Head>
-        {/* ... */}
+       <Head>
+        <title>Admin Dashboard</title>
+        <meta name="description" content="interface for admins to see and delete users" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={`${styles.container} ${darkMode ? styles['dark-mode'] : ''}`}>
         <Navbar darkMode={darkMode}/>
         <main className={styles.dashboard}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',  }}>
-         
-            
-            {isMobileView ? (
-              <button className={styles.darkModeButton} onClick={toggleDarkMode} style={{ marginRight: '25px' , marginTop: '2px'}}>
-                {darkMode ? (
-                  <img src="/light1.png" style={{ width: '50px' }} alt="Sun" />
-                ) : (
-                  <img src="/dark1.png" style={{ width: '50px' }} alt="Moon" />
-                )}
-              </button>
-            ) : <button className={styles.darkModeButton} onClick={toggleDarkMode}   style={{
-             
-              marginTop: '2px',
-         
-              top: '40px', right:'160px'// Adjust this value as needed
-            }}
-          >
-          
-                {darkMode ? (
-                  <img src="/light1.png" style={{ width: '50px' }} alt="Sun" />
-                ) : (
-                  <img src="/dark1.png" style={{ width: '50px' }} alt="Moon" />
-                )}
-              </button>}
-            
-          </div>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', paddingRight: '60px' }}>
+  {isMobileView ? (
+    <button className={styles.darkModeButton} onClick={toggleDarkMode}>
+      {darkMode ? (
+        <img src="/light1.png" style={{ width: '50px' }} alt="Sun" />
+      ) : (
+        <img src="/dark1.png" style={{ width: '50px' }} alt="Moon" />
+      )}
+    </button>
+  ) : (
+    <button className={styles.darkModeButton} onClick={toggleDarkMode}>
+      {darkMode ? (
+        <img src="/light1.png" style={{ width: '50px' }} alt="Sun" />
+      ) : (
+        <img src="/dark1.png" style={{ width: '50px' }} alt="Moon" />
+      )}
+    </button>
+  )}
+</div>
+
         
 
           <div className={styles.tabContent}>
