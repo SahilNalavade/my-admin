@@ -226,7 +226,7 @@ const App = () => {
 
       <div className="pagination" style={{ display: 'flex', justifyContent: 'space-between' ,marginTop:'10px'}}>
   {/* The following div will be hidden in mobile view */}
-  <div className={`${styles.paginationInfo} ${styles.hideMobile}`}>
+  <div className={`${styles.paginationInfo} ${styles.hideMobile}`} style={{color:'#777777'}}>
     {selectedRows.length} of {filteredUsers.length} row(s) selected
   </div>
 
