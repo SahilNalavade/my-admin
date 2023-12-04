@@ -142,7 +142,7 @@ const App = () => {
             <th className={styles.tableHeader}>Name</th>
             <th className={styles.tableHeader}>Email</th>
             <th className={styles.tableHeader}>Role</th>
-            <th className={styles.tableHeader}>Actions</th>
+            <th className={styles.tableHeader} style={{paddingRight:'10px'}}>Actions</th>
           </tr>
         </thead>
         <tbody className={styles.tableBody}>
@@ -162,7 +162,7 @@ const App = () => {
                   }}
                 />
               </td>
-              <td style={{paddingLeft:'10px' }}>
+              <td style={{paddingLeft:'10px'}}>
               {editingUserId === user.id ? (
                 <input
                   type="text"

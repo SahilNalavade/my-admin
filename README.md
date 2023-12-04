@@ -1,3 +1,27 @@
+
+
+## Demo
+
+<img src="/juno_web/public/Screenshots/img1.JPG" alt="Demo" >
+<img src="/juno_web/public/Screenshots/img2.JPG" alt="Demo" >
+<img src="/juno_web/public/Screenshots/img3.JPG" alt="Demo" >
+<img src="/juno_web/public/Screenshots/img3.jpeg" alt="Demo"  height="500">
+<img src="/juno_web/public/Screenshots/img4.jpeg" alt="Demo" height="500">
+<img src="/juno_web/public/Screenshots/img5.jpeg" alt="Demo" height="500">
+<img src="/juno_web/public/Screenshots/img6.jpeg" alt="Demo" height="500">
+<img src="/juno_web/public/Screenshots/img7.jpeg" alt="Demo" height="500">
+<img src="/juno_web/public/Screenshots/img8.jpeg" alt="Demo" height="500">
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Project Title
+
+An interface for admins to see and delete users.
+
+## Technology Stack
+
+This project is implemented using [Next.js](https://nextjs.org/) and styled with CSS, without relying on any external UI library.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

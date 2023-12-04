@@ -214,6 +214,7 @@
   left: 306px;
   border-collapse: collapse;
   border: 1px solid #E4E4E4;
+  padding-left:10px;
   
 }
 
@@ -248,7 +249,8 @@
 @media (max-width: 768px) {
   .table {
   
-    margin-left:-10px
+
+
 
   }
 
