@@ -5,8 +5,7 @@
 ![Demo](/my-admin/public/screenshots/img1.JPG)
 ![Demo](/my-admin/public/screenshots/img2.JPG)
 ![Demo](/my-admin/public/screenshots/img3.JPG)
-<img src="/my-admin/public/screenshots/img4.JPEG" alt="Demo" height="500">
-<img src="/my-admin/public/screenshots/img5.JPEG" alt="Demo" height="500">
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
