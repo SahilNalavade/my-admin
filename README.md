@@ -2,9 +2,8 @@
 
 ## Demo
 
-![Demo](/my-admin/public/screenshots/img1.JPG)
-![Demo](/my-admin/public/screenshots/img2.JPG)
-![Demo](/my-admin/public/screenshots/img3.JPG)
+![Demo](./public/screenshots/img1.JPG)
+
 
 
 
