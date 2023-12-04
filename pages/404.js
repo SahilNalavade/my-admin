@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
 const NotFound = () => {
   return (
     <div style={{ textAlign: 'center',background:'#fff' ,height:'100vh',paddingTop: '5%',color:'#000'}}>

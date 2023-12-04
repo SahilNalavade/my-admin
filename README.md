@@ -2,15 +2,12 @@
 
 ## Demo
 
-<img src="/juno_web/public/Screenshots/img1.JPG" alt="Demo" >
-<img src="/juno_web/public/Screenshots/img2.JPG" alt="Demo" >
-<img src="/juno_web/public/Screenshots/img3.JPG" alt="Demo" >
-<img src="/juno_web/public/Screenshots/img3.jpeg" alt="Demo"  height="500">
-<img src="/juno_web/public/Screenshots/img4.jpeg" alt="Demo" height="500">
-<img src="/juno_web/public/Screenshots/img5.jpeg" alt="Demo" height="500">
-<img src="/juno_web/public/Screenshots/img6.jpeg" alt="Demo" height="500">
-<img src="/juno_web/public/Screenshots/img7.jpeg" alt="Demo" height="500">
-<img src="/juno_web/public/Screenshots/img8.jpeg" alt="Demo" height="500">
+<img src="/my-admin/public/screenshots/img1.JPG" alt="Demo" >
+<img src="/my-admin/public/screenshots/img2.JPG" alt="Demo" >
+<img src="/my-admin/public/screenshots/img3.JPG" alt="Demo" >
+<img src="/my-admin/public/screenshots/img4.JPEG" alt="Demo"  height="500">
+<img src="/my-admin/public/screenshots/img5.JPEG" alt="Demo" height="500">
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
