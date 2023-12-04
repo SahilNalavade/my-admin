@@ -26,7 +26,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={`${styles.container} ${darkMode ? styles['dark-mode'] : ''}`}>
+      <div className={`${styles.container} ${darkMode ? styles['dark-mode'] : ''}`} style={{marginLeft:'-10px'}}>
         <Navbar darkMode={darkMode}/>
         <main className={styles.dashboard}>
         <div style={{ position: 'relative' }}>
