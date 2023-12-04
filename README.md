@@ -2,10 +2,10 @@
 
 ## Demo
 
-<img src="/my-admin/public/screenshots/img1.JPG" alt="Demo" >
-<img src="/my-admin/public/screenshots/img2.JPG" alt="Demo" >
-<img src="/my-admin/public/screenshots/img3.JPG" alt="Demo" >
-<img src="/my-admin/public/screenshots/img4.JPEG" alt="Demo"  height="500">
+![Demo](/my-admin/public/screenshots/img1.JPG)
+![Demo](/my-admin/public/screenshots/img2.JPG)
+![Demo](/my-admin/public/screenshots/img3.JPG)
+<img src="/my-admin/public/screenshots/img4.JPEG" alt="Demo" height="500">
 <img src="/my-admin/public/screenshots/img5.JPEG" alt="Demo" height="500">
 
 
